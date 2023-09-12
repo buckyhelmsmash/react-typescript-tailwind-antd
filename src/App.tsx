@@ -1,17 +1,12 @@
 import React from 'react';
-
-import {Button} from "antd";
+import {StyleProvider} from '@ant-design/cssinjs';
+import RootPage from "./page/RootPage";
 
 function App() {
     return (
-        <div className={"flex flex-col gap-4"}>
-            <h1 className="text-3xl font-bold underline text-red-600">
-                Simple React Typescript Tailwind Sample
-            </h1>
-            <Button type={"primary"}>
-                ASD
-            </Button>
-        </div>
+        <StyleProvider hashPriority="high">
+            <RootPage/>
+        </StyleProvider>
     );
 }
 
